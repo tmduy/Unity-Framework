@@ -26,6 +26,9 @@ default: $(BUILD_DIR)
 	$(CC) $(CFLAGS) $(DEFINES) $(SRC) $(INC_DIR) -o $(TARGET) -D MACRO_PRINT_INTRO
 	./$(TARGET)
 	
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+	
 clean:
 	rm -f $(TARGET) $(BUILD_DIR)/*.exe
 
