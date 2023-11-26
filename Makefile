@@ -30,7 +30,7 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 	
 clean:
-	rm -f $(TARGET) $(BUILD_DIR)/*.exe
+	rm -rf $(BUILD_DIR)
 
 # These extended flags DO get included before any target build runs
 CFLAGS += -Wbad-function-cast
